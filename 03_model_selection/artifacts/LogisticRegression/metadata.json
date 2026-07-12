@@ -1,0 +1,7 @@
+{
+  "model_name": "LogisticRegression",
+  "classifier_type": "LogisticRegression",
+  "artifacts": {
+    "pipeline": "/Users/dpiedrahita/proyectos/DS_pro/03_model_selection/artifacts/LogisticRegression/pipeline.joblib"
+  }
+}
