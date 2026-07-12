@@ -1,0 +1,78 @@
+variable,tipo,auc_abs,auc_interpretation,effect_size,effect_size_interpretation,iv,iv_interpretation,p_value,separation_detected,clasificacion,advertencia_iv
+o_freq_enc,continua,0.7559436894565387,separación moderada,1.0788164011929857,grande,,,0.0,False,Útil,False
+o,categórica,0.7559436894565387,separación moderada,0.29359542366964697,débil,1.114076701467345,"sospechoso, revisar leakage",0.0,False,Útil,True
+o_target_enc,continua,0.7551456822714936,separación moderada,1.3651260710830906,grande,,,0.0,False,Útil,False
+score_bin,categórica,0.752184951346767,separación moderada,0.23165831866793296,débil,0.9587997144774686,"sospechoso, revisar leakage",0.0,False,Útil,True
+score,continua,0.7256339948404334,separación moderada,0.7817166038102444,mediano,,,0.0,False,Útil,False
+score_log,continua,0.7256339948404334,separación moderada,0.44805496500966785,pequeño,,,0.0,False,Útil,False
+f_log,continua,0.6868938668266665,separación débil,0.6359758832395368,mediano,,,0.0,False,Marginal (evaluar en conjunto),False
+f,continua,0.6864756012583733,separación débil,0.05401057673768522,despreciable,,,0.0,False,Marginal (evaluar en conjunto),False
+f_bin,categórica,0.6769859530199749,separación débil,0.1475245185156655,débil,0.4286349578771392,fuerte,0.0,True,Revisar antes de decidir (inestabilidad numérica),False
+l_log,continua,0.6754706876508572,separación débil,0.8355800394902269,grande,,,0.0,False,Marginal (evaluar en conjunto),False
+l,continua,0.6754706876508572,separación débil,0.5412231624832728,mediano,,,0.0,False,Marginal (evaluar en conjunto),False
+l_bin,categórica,0.6610302675783728,separación débil,0.14164216648671443,débil,0.35329770250331116,fuerte,0.0,True,Revisar antes de decidir (inestabilidad numérica),False
+ratio_monto_l,continua,0.6609605009032077,separación débil,0.25488459331773267,pequeño,,,0.0,False,Marginal (evaluar en conjunto),False
+m,continua,0.6603953823044899,separación débil,0.43664842889810207,pequeño,,,0.0,False,Marginal (evaluar en conjunto),False
+m_log,continua,0.6603953823044899,separación débil,0.6336617448660408,mediano,,,0.0,False,Marginal (evaluar en conjunto),False
+pca_dm_1,continua,0.6593192845773888,separación débil,0.43604642732928295,pequeño,,,0.0,False,Marginal (evaluar en conjunto),False
+m_bin,categórica,0.6527399442632299,separación débil,0.13272284900817327,débil,0.3190793658087541,fuerte,0.0,False,Marginal (evaluar en conjunto),False
+j_target_enc,continua,0.642816199659482,separación débil,0.7612248029437411,mediano,,,1.239918114304514e-276,False,Marginal (evaluar en conjunto),False
+p,categórica,0.6240229503213784,separación débil,0.11065112021945576,débil,0.25465623648621916,medio,1.7230011262475062e-281,False,Marginal (evaluar en conjunto),False
+f_is_zero,categórica,0.6151011898036276,separación débil,0.13693538941625244,débil,0.28314249613623416,medio,0.0,False,Marginal (evaluar en conjunto),False
+d,continua,0.6148835435482016,separación débil,0.3575602179442626,pequeño,,,8.715850776764839e-183,False,Marginal (evaluar en conjunto),False
+d_log,continua,0.6148835435482016,separación débil,0.4029320531135476,pequeño,,,8.715850776764839e-183,False,Marginal (evaluar en conjunto),False
+n,categórica,0.6136843411522931,separación débil,0.1711297563175027,débil,0.36264821395122065,fuerte,0.0,False,Marginal (evaluar en conjunto),False
+d_bin,categórica,0.6045255073887682,separación débil,0.0862300138523727,despreciable,0.1457423989512971,medio,1.223870768665243e-167,False,Marginal (evaluar en conjunto),False
+m_is_zero,categórica,0.57535020623686,casi aleatorio,0.108582705893042,débil,0.16804203315265492,medio,3.8180288917299264e-271,False,Descartable,False
+j_freq_enc,continua,0.5650708540720387,casi aleatorio,0.20570434180508707,pequeño,,,5.692888391101343e-59,True,Revisar antes de decidir (inestabilidad numérica),False
+h_log,continua,0.5623225485880944,casi aleatorio,0.240737504969405,pequeño,,,2.419809595230624e-54,False,Descartable,False
+h,continua,0.5623225485880944,casi aleatorio,0.16783145013668052,despreciable,,,2.419809595230624e-54,False,Descartable,False
+b_log,continua,0.5615380035328362,casi aleatorio,0.1514093823594404,despreciable,,,8.733581151992195e-46,False,Descartable,False
+b,continua,0.5615380035328362,casi aleatorio,0.17929081715938286,despreciable,,,8.733581151992195e-46,False,Descartable,False
+b_bin,categórica,0.5610184495913888,casi aleatorio,0.05506830809688225,despreciable,0.055999053217335615,débil,1.1297145488014756e-66,False,Descartable,False
+d_top1pct,categórica,0.559579752700375,casi aleatorio,0.06060202336361565,despreciable,0.09049367303354565,débil,7.688487798462803e-86,False,Descartable,False
+monto,continua,0.5592770267404621,casi aleatorio,0.3238462975011087,pequeño,,,3.0711983553736707e-49,False,Descartable,False
+monto_log,continua,0.5592770267404621,casi aleatorio,0.26290498918953864,pequeño,,,3.0711983553736707e-49,False,Descartable,False
+h_bin,categórica,0.5551243935756627,casi aleatorio,0.04771259145564296,despreciable,0.04296342680661606,débil,1.5321700542864937e-50,False,Descartable,False
+monto_bin,categórica,0.553432842308592,casi aleatorio,0.05003832502720523,despreciable,0.045738665911391495,débil,1.1059650873402937e-55,False,Descartable,False
+fecha_hour_cos,continua,0.5454102674631042,casi aleatorio,0.1932185678086957,despreciable,,,1.0242949050353332e-29,False,Descartable,False
+a_grouped,categórica,0.544587965072457,casi aleatorio,0.055958276214805286,despreciable,0.052921486876707384,débil,6.009785032857089e-71,False,Descartable,False
+a,categórica,0.544587965072457,casi aleatorio,0.055958276214805286,despreciable,0.052921486876707384,débil,6.009785032857089e-71,False,Descartable,False
+a_freq_enc,continua,0.544587965072457,casi aleatorio,0.24888275194247916,pequeño,,,7.183323405584004e-72,False,Descartable,False
+j,categórica,0.5435076919224601,casi aleatorio,0.2994989546497888,débil,0.08180185521702131,débil,4.1758139910337786e-45,False,Descartable,False
+c_bin,categórica,0.5408617879471773,casi aleatorio,0.0323892825526679,despreciable,0.021605675421400367,débil,3.84249701953496e-22,False,Descartable,False
+h_is_zero,categórica,0.5397204615667053,casi aleatorio,0.061906434224707964,despreciable,0.05994938135690871,débil,1.7129840950788387e-89,False,Descartable,False
+g,categórica,0.5396223946306475,casi aleatorio,0.05684660144628989,despreciable,0.05488421315044755,débil,3.167772200604865e-47,True,Revisar antes de decidir (inestabilidad numérica),False
+g_grouped,categórica,0.537448826152141,casi aleatorio,0.04107627914271758,despreciable,0.04681413252747417,débil,3.0816236632838426e-37,False,Descartable,False
+g_freq_enc,continua,0.5368654523077222,casi aleatorio,0.17228657266427716,despreciable,,,1.5721084290588852e-34,False,Descartable,False
+score_top1pct,categórica,0.5359832846327117,casi aleatorio,0.131857240825599,débil,0.15052431322700693,medio,0.0,False,Descartable,False
+e_bin,categórica,0.5315929367127774,casi aleatorio,0.027763042601765646,despreciable,0.016402490961977465,inútil,2.684678776065918e-18,False,Descartable,False
+e_log,continua,0.5283505370267776,casi aleatorio,0.052166376780384986,despreciable,,,1.5558084010353304e-13,False,Descartable,False
+e,continua,0.5283505370267776,casi aleatorio,0.006387916846809877,despreciable,,,1.5558084010353304e-13,False,Descartable,False
+l_is_zero,categórica,0.5270114817696202,casi aleatorio,0.1037506292823019,débil,0.10062635878689197,medio,9.79184381190889e-248,False,Descartable,False
+e_is_zero,categórica,0.5226082787405175,casi aleatorio,0.020138271239440727,despreciable,0.00822953798243671,inútil,6.802183181905645e-11,False,Descartable,False
+j_grouped,categórica,0.520434320741219,casi aleatorio,0.060846278760008754,despreciable,0.0456016140845556,débil,6.304714734005625e-84,False,Descartable,False
+b_top1pct,categórica,0.5197301059169062,casi aleatorio,0.07891258291805234,despreciable,0.06381963661463329,débil,3.438266070123112e-144,False,Descartable,False
+fecha_weekday,categórica,0.5110495335351908,casi aleatorio,0.008806425377329874,despreciable,0.0015682911484773045,inútil,0.22791149709347464,False,Descartable,False
+c_missing,categórica,0.5109495697621013,casi aleatorio,0.014874591359282329,despreciable,0.004277685773673374,inútil,1.4393116916997147e-06,False,Descartable,False
+b_missing,categórica,0.5109495697621013,casi aleatorio,0.014874591359282329,despreciable,0.004277685773673374,inútil,1.4393116916997147e-06,False,Descartable,False
+c_log,continua,0.5103324077174501,casi aleatorio,0.04272391586647701,despreciable,,,0.01708936069521937,False,Descartable,False
+c,continua,0.5103324077174501,casi aleatorio,0.15990482893350808,despreciable,,,0.01708936069521937,False,Descartable,False
+fecha_hour,continua,0.5102863663081809,casi aleatorio,0.005441527739090347,despreciable,,,0.010349995778331293,False,Descartable,False
+monto_top1pct,categórica,0.5095515602561768,casi aleatorio,0.04234522457487934,despreciable,0.022251892971050156,débil,7.687485387082081e-43,False,Descartable,False
+d_is_zero,categórica,0.5083808952065789,casi aleatorio,0.05117787799768434,despreciable,0.026885438525281552,débil,9.400331863869393e-62,False,Descartable,False
+score_is_zero,categórica,0.5075380340562201,casi aleatorio,0.018993163677840562,despreciable,0.009562508847447602,inútil,7.558530224185959e-10,False,Descartable,False
+c_top1pct,categórica,0.5055332231532237,casi aleatorio,0.026037116717189043,despreciable,0.009673048297491327,inútil,3.277467443165782e-17,False,Descartable,False
+l_top1pct,categórica,0.5044022043051766,casi aleatorio,0.019400037010618144,despreciable,0.015689087421364885,inútil,3.262501061448478e-10,False,Descartable,False
+f_top1pct,categórica,0.5038408900754641,casi aleatorio,0.016867086103502675,despreciable,0.00992766168711399,inútil,4.6273448926039705e-08,False,Descartable,False
+m_top1pct,categórica,0.5037439889326768,casi aleatorio,0.01643611286921249,despreciable,0.009203080526657201,inútil,1.0071594339540455e-07,False,Descartable,False
+fecha_hour_sin,continua,0.5035960356442022,casi aleatorio,0.019082749599822486,despreciable,,,0.3697649781348563,False,Descartable,False
+fecha_is_weekend,categórica,0.5030558579941439,casi aleatorio,0.003237377145043264,despreciable,0.00021855200710611583,inútil,0.29420795519638054,False,Descartable,False
+e_top1pct,categórica,0.5026665559615346,casi aleatorio,0.011660608228352728,despreciable,0.002425492548980117,inútil,0.0001580122729625011,False,Descartable,False
+b_is_zero,categórica,0.5014783569380903,casi aleatorio,0.01144790519505439,despreciable,0.0021768649286379163,inútil,0.0002079072539165554,False,Descartable,False
+h_top1pct,categórica,0.5013465761467606,casi aleatorio,0.005759978724377886,despreciable,0.000773920594165478,inútil,0.062002543988437346,False,Descartable,False
+m_missing,categórica,0.5012062849722521,casi aleatorio,0.009617402479599548,despreciable,0.001626524958895902,inútil,0.0018325227817113177,False,Descartable,False
+d_missing,categórica,0.5012062849722521,casi aleatorio,0.009617402479599548,despreciable,0.001626524958895902,inútil,0.0018325227817113177,False,Descartable,False
+g_missing,categórica,0.5002477776832712,casi aleatorio,0.0027960154588777364,despreciable,0.0002718711963654566,inútil,0.3649725958713801,False,Descartable,False
+f_missing,categórica,0.5000552547242789,casi aleatorio,0.00029474810614189796,despreciable,5.427341050381077e-06,inútil,0.9239171655340703,True,Revisar antes de decidir (inestabilidad numérica),False
+l_missing,categórica,0.5000552547242789,casi aleatorio,0.00029474810614189796,despreciable,5.427341050381077e-06,inútil,0.9239171655340703,True,Revisar antes de decidir (inestabilidad numérica),False

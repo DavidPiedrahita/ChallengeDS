@@ -1,0 +1,7 @@
+columna,n_categorias,cramers_v,p_value,asociacion_con_target
+j,7558,0.2995,4.1758139910337786e-45,débil
+o,3,0.2936,0.0,débil
+n,2,0.1711,0.0,débil
+p,2,0.1107,1.7230011262475062e-281,débil
+g,45,0.0568,3.1677722006047737e-47,despreciable
+a,4,0.056,6.009785032857089e-71,despreciable

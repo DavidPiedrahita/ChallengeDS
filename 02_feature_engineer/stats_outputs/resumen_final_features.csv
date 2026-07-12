@@ -1,0 +1,78 @@
+variable,transformacion_aplicada,tipo_test_aplicado,iv,auc_abs,poder_predictivo,observaciones_generales
+o_freq_enc,Frequency encoding,"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.7559436894565387,moderada,Útil; efecto (Cohen's d) grande
+o,Variable original (sin transformar),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",1.114076701467345,0.7559436894565387,moderada,"Útil; efecto (V de Cramér) débil; IV sospechoso, revisar posible leakage"
+o_target_enc,Target encoding con validación cruzada,"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.7551456822714936,moderada,Útil; efecto (Cohen's d) grande
+score_bin,Bins por cuantiles (5 bins),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.9587997144774686,0.752184951346767,moderada,"Útil; efecto (V de Cramér) débil; IV sospechoso, revisar posible leakage"
+score,Variable original (sin transformar),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.7256339948404334,moderada,Útil; efecto (Cohen's d) mediano
+score_log,Transformación logarítmica (log1p),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.7256339948404334,moderada,Útil; efecto (Cohen's d) pequeño
+f_log,Transformación logarítmica (log1p),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.6868938668266665,débil,Marginal (evaluar en conjunto); efecto (Cohen's d) mediano
+f,Variable original (sin transformar),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.6864756012583733,débil,Marginal (evaluar en conjunto); efecto (Cohen's d) despreciable
+f_bin,Bins por cuantiles (5 bins),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.4286349578771392,0.6769859530199749,débil,Revisar antes de decidir (inestabilidad numérica); efecto (V de Cramér) débil; inestabilidad numérica en el ajuste logístico
+l,Variable original (sin transformar),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.6754706876508572,débil,Marginal (evaluar en conjunto); efecto (Cohen's d) mediano
+l_log,Transformación logarítmica (log1p),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.6754706876508572,débil,Marginal (evaluar en conjunto); efecto (Cohen's d) grande
+l_bin,Bins por cuantiles (5 bins),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.35329770250331116,0.6610302675783728,débil,Revisar antes de decidir (inestabilidad numérica); efecto (V de Cramér) débil; inestabilidad numérica en el ajuste logístico
+ratio_monto_l,Ratio monto / l,"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.6609605009032077,débil,Marginal (evaluar en conjunto); efecto (Cohen's d) pequeño
+m,Variable original (sin transformar),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.6603953823044899,débil,Marginal (evaluar en conjunto); efecto (Cohen's d) pequeño
+m_log,Transformación logarítmica (log1p),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.6603953823044899,débil,Marginal (evaluar en conjunto); efecto (Cohen's d) mediano
+pca_dm_1,PCA (1 componente) sobre d y m,"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.6593192845773888,débil,Marginal (evaluar en conjunto); efecto (Cohen's d) pequeño
+m_bin,Bins por cuantiles (5 bins),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.3190793658087541,0.6527399442632299,débil,Marginal (evaluar en conjunto); efecto (V de Cramér) débil
+j_target_enc,Target encoding con validación cruzada,"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.642816199659482,débil,Marginal (evaluar en conjunto); efecto (Cohen's d) mediano
+p,Variable original (sin transformar),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.25465623648621916,0.6240229503213784,débil,Marginal (evaluar en conjunto); efecto (V de Cramér) débil
+f_is_zero,Zero flag (flag de valor cero),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.28314249613623416,0.6151011898036276,débil,Marginal (evaluar en conjunto); efecto (V de Cramér) débil
+d,Variable original (sin transformar),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.6148835435482016,débil,Marginal (evaluar en conjunto); efecto (Cohen's d) pequeño
+d_log,Transformación logarítmica (log1p),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.6148835435482016,débil,Marginal (evaluar en conjunto); efecto (Cohen's d) pequeño
+n,Variable original (sin transformar),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.36264821395122065,0.6136843411522931,débil,Marginal (evaluar en conjunto); efecto (V de Cramér) débil
+d_bin,Bins por cuantiles (5 bins),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.1457423989512971,0.6045255073887682,débil,Marginal (evaluar en conjunto); efecto (V de Cramér) despreciable
+m_is_zero,Zero flag (flag de valor cero),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.16804203315265492,0.57535020623686,casi aleatoria,Descartable; efecto (V de Cramér) débil
+j_freq_enc,Frequency encoding,"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.5650708540720387,casi aleatoria,Revisar antes de decidir (inestabilidad numérica); efecto (Cohen's d) pequeño; inestabilidad numérica en el ajuste logístico
+h_log,Transformación logarítmica (log1p),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.5623225485880944,casi aleatoria,Descartable; efecto (Cohen's d) pequeño
+h,Variable original (sin transformar),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.5623225485880944,casi aleatoria,Descartable; efecto (Cohen's d) despreciable
+b,Variable original (sin transformar),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.5615380035328362,casi aleatoria,Descartable; efecto (Cohen's d) despreciable
+b_log,Transformación logarítmica (log1p),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.5615380035328362,casi aleatoria,Descartable; efecto (Cohen's d) despreciable
+b_bin,Bins por cuantiles (5 bins),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.055999053217335615,0.5610184495913888,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+d_top1pct,Percentile flag (top 1%),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.09049367303354565,0.559579752700375,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+monto,Variable original (sin transformar),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.5592770267404621,casi aleatoria,Descartable; efecto (Cohen's d) pequeño
+monto_log,Transformación logarítmica (log1p),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.5592770267404621,casi aleatoria,Descartable; efecto (Cohen's d) pequeño
+h_bin,Bins por cuantiles (5 bins),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.04296342680661606,0.5551243935756627,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+monto_bin,Bins por cuantiles (5 bins),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.045738665911391495,0.553432842308592,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+fecha_hour_cos,Codificación cíclica de hora (coseno),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.5454102674631042,casi aleatoria,Descartable; efecto (Cohen's d) despreciable
+a_freq_enc,Frequency encoding,"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.544587965072457,casi aleatoria,Descartable; efecto (Cohen's d) pequeño
+a,Variable original (sin transformar),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.052921486876707384,0.544587965072457,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+a_grouped,Agrupación de categorías raras (rare grouping),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.052921486876707384,0.544587965072457,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+j,Variable original (sin transformar),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.08180185521702131,0.5435076919224601,casi aleatoria,Descartable; efecto (V de Cramér) débil
+c_bin,Bins por cuantiles (5 bins),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.021605675421400367,0.5408617879471773,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+h_is_zero,Zero flag (flag de valor cero),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.05994938135690871,0.5397204615667053,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+g,Variable original (sin transformar),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.05488421315044755,0.5396223946306475,casi aleatoria,Revisar antes de decidir (inestabilidad numérica); efecto (V de Cramér) despreciable; inestabilidad numérica en el ajuste logístico
+g_grouped,Agrupación de categorías raras (rare grouping),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.04681413252747417,0.537448826152141,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+g_freq_enc,Frequency encoding,"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.5368654523077222,casi aleatoria,Descartable; efecto (Cohen's d) despreciable
+score_top1pct,Percentile flag (top 1%),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.15052431322700693,0.5359832846327117,casi aleatoria,Descartable; efecto (V de Cramér) débil
+e_bin,Bins por cuantiles (5 bins),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.016402490961977465,0.5315929367127774,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+e,Variable original (sin transformar),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.5283505370267776,casi aleatoria,Descartable; efecto (Cohen's d) despreciable
+e_log,Transformación logarítmica (log1p),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.5283505370267776,casi aleatoria,Descartable; efecto (Cohen's d) despreciable
+l_is_zero,Zero flag (flag de valor cero),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.10062635878689197,0.5270114817696202,casi aleatoria,Descartable; efecto (V de Cramér) débil
+e_is_zero,Zero flag (flag de valor cero),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.00822953798243671,0.5226082787405175,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+j_grouped,Agrupación de categorías raras (rare grouping),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.0456016140845556,0.520434320741219,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+b_top1pct,Percentile flag (top 1%),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.06381963661463329,0.5197301059169062,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+fecha_weekday,Extracción de día de la semana,"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.0015682911484773045,0.5110495335351908,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+c_missing,Missing indicator (flag de nulo),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.004277685773673374,0.5109495697621013,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+b_missing,Missing indicator (flag de nulo),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.004277685773673374,0.5109495697621013,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+c,Variable original (sin transformar),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.5103324077174501,casi aleatoria,Descartable; efecto (Cohen's d) despreciable
+c_log,Transformación logarítmica (log1p),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.5103324077174501,casi aleatoria,Descartable; efecto (Cohen's d) despreciable
+fecha_hour,Extracción de hora del día,"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.5102863663081809,casi aleatoria,Descartable; efecto (Cohen's d) despreciable
+monto_top1pct,Percentile flag (top 1%),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.022251892971050156,0.5095515602561768,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+d_is_zero,Zero flag (flag de valor cero),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.026885438525281552,0.5083808952065789,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+score_is_zero,Zero flag (flag de valor cero),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.009562508847447602,0.5075380340562201,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+c_top1pct,Percentile flag (top 1%),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.009673048297491327,0.5055332231532237,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+l_top1pct,Percentile flag (top 1%),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.015689087421364885,0.5044022043051766,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+f_top1pct,Percentile flag (top 1%),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.00992766168711399,0.5038408900754641,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+m_top1pct,Percentile flag (top 1%),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.009203080526657201,0.5037439889326768,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+fecha_hour_sin,Codificación cíclica de hora (seno),"Continua (Mann-Whitney, KS, punto-biserial, AUC, Cohen's d, Wald)",,0.5035960356442022,casi aleatoria,Descartable; efecto (Cohen's d) despreciable
+fecha_is_weekend,Extracción de indicador de fin de semana,"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.00021855200710611583,0.5030558579941439,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+e_top1pct,Percentile flag (top 1%),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.002425492548980117,0.5026665559615346,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+b_is_zero,Zero flag (flag de valor cero),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.0021768649286379163,0.5014783569380903,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+h_top1pct,Percentile flag (top 1%),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.000773920594165478,0.5013465761467606,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+m_missing,Missing indicator (flag de nulo),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.001626524958895902,0.5012062849722521,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+d_missing,Missing indicator (flag de nulo),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.001626524958895902,0.5012062849722521,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+g_missing,Missing indicator (flag de nulo),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",0.0002718711963654566,0.5002477776832712,casi aleatoria,Descartable; efecto (V de Cramér) despreciable
+f_missing,Missing indicator (flag de nulo),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",5.427341050381077e-06,0.5000552547242789,casi aleatoria,Revisar antes de decidir (inestabilidad numérica); efecto (V de Cramér) despreciable; inestabilidad numérica en el ajuste logístico
+l_missing,Missing indicator (flag de nulo),"Categórica (Chi², V de Cramér, IV/WoE, AUC-WoE, LR test)",5.427341050381077e-06,0.5000552547242789,casi aleatoria,Revisar antes de decidir (inestabilidad numérica); efecto (V de Cramér) despreciable; inestabilidad numérica en el ajuste logístico

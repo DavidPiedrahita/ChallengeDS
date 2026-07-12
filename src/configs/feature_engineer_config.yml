@@ -1,0 +1,297 @@
+# Configuración de las transformaciones de feature engineering aplicadas
+# en 00_feat_engineer_initial.ipynb sobre dataset/train.csv.
+#
+# Cada entrada se pasa tal cual a `preprocessing.apply_transformations`
+# (ver src/feature_engineer_utils/preprocessing_features_laboratory.py):
+#   process:     nombre del método de la clase `preprocessing` a invocar
+#   column:      columna (o lista de columnas) de entrada
+#   new_column:  nombre de la feature de salida
+#   params:      argumentos opcionales adicionales del método (opcional)
+#
+# Cobertura: se aplica cada transformación estructuralmente compatible a
+# cada columna original, siempre que produzca una feature no degenerada
+# (p.ej. no se agrega zero_flag si la columna no tiene ceros, ni
+# missing_flag si no tiene nulos). Agrupado por columna original.
+#
+# Exclusiones deliberadas (documentadas, no son un olvido):
+#   - `k`: 100% valores únicos (ID), se deja solo como llave, no como feature.
+#   - `n`, `p`: categóricas binarias (2 niveles). Un encoding de frecuencia
+#     o target sobre una binaria es una función biyectiva del valor crudo
+#     (no agrega información nueva), así que se dejan como están.
+#   - `o`: sí se codifica (frequency + target encoding), pero NO se le
+#     aplica missing_flag: su nulo (72.4%) ya es la señal más fuerte del
+#     dataset y se conserva como categoría explícita, no como "dato a
+#     imputar" (ver fila "Alta cantidad de nulos" de la tabla de EDA).
+#   - `fraude`: es el target, no se transforma.
+
+config_list:
+  # ---- a (categórica, 4 niveles, sin nulos/ceros) ----
+  - process: frequency_encoding
+    column: a
+    new_column: a_freq_enc
+  - process: rare_grouping
+    column: a
+    new_column: a_grouped
+
+  # ---- b (numérica en [0,1], 12% nulos, pocos ceros) ----
+  - process: missing_flag
+    column: b
+    new_column: b_missing
+  - process: zero_flag
+    column: b
+    new_column: b_is_zero
+  - process: log_feature
+    column: b
+    new_column: b_log
+  - process: top_percentile_flag
+    column: b
+    new_column: b_top1pct
+    params:
+      quantile: 0.99
+  - process: quantile_bins_dropna
+    column: b
+    new_column: b_bin
+    params:
+      num_bins: 5
+
+  # ---- c (numérica, 12% nulos, skew alto, sin ceros) ----
+  - process: missing_flag
+    column: c
+    new_column: c_missing
+  - process: log_feature
+    column: c
+    new_column: c_log
+  - process: top_percentile_flag
+    column: c
+    new_column: c_top1pct
+    params:
+      quantile: 0.99
+  - process: quantile_bins_dropna
+    column: c
+    new_column: c_bin
+    params:
+      num_bins: 5
+
+  # ---- d (numérica, pocos nulos/ceros, correlacionada con m) ----
+  - process: missing_flag
+    column: d
+    new_column: d_missing
+  - process: zero_flag
+    column: d
+    new_column: d_is_zero
+  - process: log_feature
+    column: d
+    new_column: d_log
+  - process: top_percentile_flag
+    column: d
+    new_column: d_top1pct
+    params:
+      quantile: 0.99
+  - process: quantile_bins_dropna
+    column: d
+    new_column: d_bin
+    params:
+      num_bins: 5
+
+  # ---- e (numérica, sin nulos, 44% ceros, skew muy alto) ----
+  - process: zero_flag
+    column: e
+    new_column: e_is_zero
+  - process: log_feature
+    column: e
+    new_column: e_log
+  - process: top_percentile_flag
+    column: e
+    new_column: e_top1pct
+    params:
+      quantile: 0.99
+  - process: quantile_bins_dropna
+    column: e
+    new_column: e_bin
+    params:
+      num_bins: 5
+
+  # ---- f (numérica, tiene negativos, pocos nulos, 17% ceros) ----
+  - process: missing_flag
+    column: f
+    new_column: f_missing
+  - process: zero_flag
+    column: f
+    new_column: f_is_zero
+  - process: log_feature
+    column: f
+    new_column: f_log
+  - process: top_percentile_flag
+    column: f
+    new_column: f_top1pct
+    params:
+      quantile: 0.99
+  - process: quantile_bins_dropna
+    column: f
+    new_column: f_bin
+    params:
+      num_bins: 5
+
+  # ---- g (categórica, 45 niveles, un poco de nulos, muy concentrada en "BR") ----
+  - process: missing_flag
+    column: g
+    new_column: g_missing
+  - process: frequency_encoding
+    column: g
+    new_column: g_freq_enc
+  - process: rare_grouping
+    column: g
+    new_column: g_grouped
+
+  # ---- h (numérica entera, sin nulos, 8.9% ceros) ----
+  - process: zero_flag
+    column: h
+    new_column: h_is_zero
+  - process: log_feature
+    column: h
+    new_column: h_log
+  - process: top_percentile_flag
+    column: h
+    new_column: h_top1pct
+    params:
+      quantile: 0.99
+  - process: quantile_bins_dropna
+    column: h
+    new_column: h_bin
+    params:
+      num_bins: 5
+
+  # ---- j (categórica de alta cardinalidad, 7,558+ categorías tipo ID) ----
+  - process: frequency_encoding
+    column: j
+    new_column: j_freq_enc
+  - process: rare_grouping
+    column: j
+    new_column: j_grouped
+  - process: target_encoding_with_cross_val
+    column: j
+    new_column: j_target_enc
+    params:
+      target_column: fraude
+
+  # ---- k: EXCLUIDA deliberadamente (ID 100% único, solo se usa como llave) ----
+
+  # ---- l (numérica, casi sin nulos, 1.35% ceros) ----
+  - process: missing_flag
+    column: l
+    new_column: l_missing
+  - process: zero_flag
+    column: l
+    new_column: l_is_zero
+  - process: log_feature
+    column: l
+    new_column: l_log
+  - process: top_percentile_flag
+    column: l
+    new_column: l_top1pct
+    params:
+      quantile: 0.99
+  - process: quantile_bins_dropna
+    column: l
+    new_column: l_bin
+    params:
+      num_bins: 5
+
+  # ---- m (numérica, pocos nulos, 10.6% ceros, correlacionada con d) ----
+  - process: missing_flag
+    column: m
+    new_column: m_missing
+  - process: zero_flag
+    column: m
+    new_column: m_is_zero
+  - process: log_feature
+    column: m
+    new_column: m_log
+  - process: top_percentile_flag
+    column: m
+    new_column: m_top1pct
+    params:
+      quantile: 0.99
+  - process: quantile_bins_dropna
+    column: m
+    new_column: m_bin
+    params:
+      num_bins: 5
+
+  # ---- n: sin transformaciones adicionales (ver nota de exclusiones arriba) ----
+
+  # ---- o (categórica, 72.4% nulo, la variable más predictiva del dataset) ----
+  - process: frequency_encoding
+    column: o
+    new_column: o_freq_enc
+  - process: target_encoding_with_cross_val
+    column: o
+    new_column: o_target_enc
+    params:
+      target_column: fraude
+
+  # ---- p: sin transformaciones adicionales (ver nota de exclusiones arriba) ----
+
+  # ---- fecha (timestamp completo) ----
+  - process: hour
+    column: fecha
+    new_column: fecha_hour
+  - process: weekday
+    column: fecha
+    new_column: fecha_weekday
+  - process: is_weekend_flag
+    column: fecha
+    new_column: fecha_is_weekend
+  - process: hour_cyclic_sin_cos
+    column: fecha
+    new_column: fecha_hour_sin
+  - process: hour_cyclic_sin_cos
+    column: fecha
+    new_column: fecha_hour_cos
+    params:
+      component: cos
+
+  # ---- monto (numérica, sin nulos/ceros, ya fuertemente asociada al target) ----
+  - process: log_feature
+    column: monto
+    new_column: monto_log
+  - process: top_percentile_flag
+    column: monto
+    new_column: monto_top1pct
+    params:
+      quantile: 0.99
+  - process: quantile_bins_dropna
+    column: monto
+    new_column: monto_bin
+    params:
+      num_bins: 5
+
+  # ---- score (numérica, sin nulos, 3.2% ceros, score de riesgo preexistente) ----
+  - process: zero_flag
+    column: score
+    new_column: score_is_zero
+  - process: log_feature
+    column: score
+    new_column: score_log
+  - process: top_percentile_flag
+    column: score
+    new_column: score_top1pct
+    params:
+      quantile: 0.99
+  - process: quantile_bins_dropna
+    column: score
+    new_column: score_bin
+    params:
+      num_bins: 5
+
+  # ---- PCA para d y m (en vez de descartar alguna de las dos) ----
+  - process: pca_components
+    column: [d, m]
+    new_column: pca_dm
+    params:
+      num_components: 1
+
+  # ---- Ratios ----
+  - process: ratio
+    column: [monto, l]
+    new_column: ratio_monto_l

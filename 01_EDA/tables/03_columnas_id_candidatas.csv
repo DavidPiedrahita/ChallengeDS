@@ -1,0 +1,4 @@
+columna,n_unicos,pct_unicos,motivo
+k,150000,1.0,~100% de valores únicos (posible identificador de fila)
+c,135090,0.9006,~90% de valores únicos (posible identificador de fila)
+j,8324,0.0555,patrón tipo prefijo_hash (posible identificador de categoría/entidad)

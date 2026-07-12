@@ -1,0 +1,563 @@
+{
+  "steps": [
+    {
+      "name": "a_freq_enc",
+      "type": "FrequencyEncodingTransformer",
+      "cols": [
+        "a"
+      ]
+    },
+    {
+      "name": "a_grouped",
+      "type": "RareGroupingTransformer",
+      "cols": [
+        "a"
+      ]
+    },
+    {
+      "name": "b_missing",
+      "type": "MissingFlagTransformer",
+      "cols": [
+        "b"
+      ]
+    },
+    {
+      "name": "b_is_zero",
+      "type": "ZeroFlagTransformer",
+      "cols": [
+        "b"
+      ]
+    },
+    {
+      "name": "b_log",
+      "type": "LogFeatureTransformer",
+      "cols": [
+        "b"
+      ]
+    },
+    {
+      "name": "b_top1pct",
+      "type": "TopPercentileFlagTransformer",
+      "cols": [
+        "b"
+      ],
+      "params": {
+        "quantile": 0.99
+      }
+    },
+    {
+      "name": "b_bin",
+      "type": "QuantileBinsDropnaTransformer",
+      "cols": [
+        "b"
+      ],
+      "params": {
+        "num_bins": 5
+      }
+    },
+    {
+      "name": "c_missing",
+      "type": "MissingFlagTransformer",
+      "cols": [
+        "c"
+      ]
+    },
+    {
+      "name": "c_log",
+      "type": "LogFeatureTransformer",
+      "cols": [
+        "c"
+      ]
+    },
+    {
+      "name": "c_top1pct",
+      "type": "TopPercentileFlagTransformer",
+      "cols": [
+        "c"
+      ],
+      "params": {
+        "quantile": 0.99
+      }
+    },
+    {
+      "name": "c_bin",
+      "type": "QuantileBinsDropnaTransformer",
+      "cols": [
+        "c"
+      ],
+      "params": {
+        "num_bins": 5
+      }
+    },
+    {
+      "name": "d_missing",
+      "type": "MissingFlagTransformer",
+      "cols": [
+        "d"
+      ]
+    },
+    {
+      "name": "d_is_zero",
+      "type": "ZeroFlagTransformer",
+      "cols": [
+        "d"
+      ]
+    },
+    {
+      "name": "d_log",
+      "type": "LogFeatureTransformer",
+      "cols": [
+        "d"
+      ]
+    },
+    {
+      "name": "d_top1pct",
+      "type": "TopPercentileFlagTransformer",
+      "cols": [
+        "d"
+      ],
+      "params": {
+        "quantile": 0.99
+      }
+    },
+    {
+      "name": "d_bin",
+      "type": "QuantileBinsDropnaTransformer",
+      "cols": [
+        "d"
+      ],
+      "params": {
+        "num_bins": 5
+      }
+    },
+    {
+      "name": "e_is_zero",
+      "type": "ZeroFlagTransformer",
+      "cols": [
+        "e"
+      ]
+    },
+    {
+      "name": "e_log",
+      "type": "LogFeatureTransformer",
+      "cols": [
+        "e"
+      ]
+    },
+    {
+      "name": "e_top1pct",
+      "type": "TopPercentileFlagTransformer",
+      "cols": [
+        "e"
+      ],
+      "params": {
+        "quantile": 0.99
+      }
+    },
+    {
+      "name": "e_bin",
+      "type": "QuantileBinsDropnaTransformer",
+      "cols": [
+        "e"
+      ],
+      "params": {
+        "num_bins": 5
+      }
+    },
+    {
+      "name": "f_missing",
+      "type": "MissingFlagTransformer",
+      "cols": [
+        "f"
+      ]
+    },
+    {
+      "name": "f_is_zero",
+      "type": "ZeroFlagTransformer",
+      "cols": [
+        "f"
+      ]
+    },
+    {
+      "name": "f_log",
+      "type": "LogFeatureTransformer",
+      "cols": [
+        "f"
+      ]
+    },
+    {
+      "name": "f_top1pct",
+      "type": "TopPercentileFlagTransformer",
+      "cols": [
+        "f"
+      ],
+      "params": {
+        "quantile": 0.99
+      }
+    },
+    {
+      "name": "f_bin",
+      "type": "QuantileBinsDropnaTransformer",
+      "cols": [
+        "f"
+      ],
+      "params": {
+        "num_bins": 5
+      }
+    },
+    {
+      "name": "g_missing",
+      "type": "MissingFlagTransformer",
+      "cols": [
+        "g"
+      ]
+    },
+    {
+      "name": "g_freq_enc",
+      "type": "FrequencyEncodingTransformer",
+      "cols": [
+        "g"
+      ]
+    },
+    {
+      "name": "g_grouped",
+      "type": "RareGroupingTransformer",
+      "cols": [
+        "g"
+      ]
+    },
+    {
+      "name": "h_is_zero",
+      "type": "ZeroFlagTransformer",
+      "cols": [
+        "h"
+      ]
+    },
+    {
+      "name": "h_log",
+      "type": "LogFeatureTransformer",
+      "cols": [
+        "h"
+      ]
+    },
+    {
+      "name": "h_top1pct",
+      "type": "TopPercentileFlagTransformer",
+      "cols": [
+        "h"
+      ],
+      "params": {
+        "quantile": 0.99
+      }
+    },
+    {
+      "name": "h_bin",
+      "type": "QuantileBinsDropnaTransformer",
+      "cols": [
+        "h"
+      ],
+      "params": {
+        "num_bins": 5
+      }
+    },
+    {
+      "name": "j_freq_enc",
+      "type": "FrequencyEncodingTransformer",
+      "cols": [
+        "j"
+      ]
+    },
+    {
+      "name": "j_grouped",
+      "type": "RareGroupingTransformer",
+      "cols": [
+        "j"
+      ]
+    },
+    {
+      "name": "j_target_enc",
+      "type": "TargetEncodingCVTransformer",
+      "cols": [
+        "j"
+      ]
+    },
+    {
+      "name": "l_missing",
+      "type": "MissingFlagTransformer",
+      "cols": [
+        "l"
+      ]
+    },
+    {
+      "name": "l_is_zero",
+      "type": "ZeroFlagTransformer",
+      "cols": [
+        "l"
+      ]
+    },
+    {
+      "name": "l_log",
+      "type": "LogFeatureTransformer",
+      "cols": [
+        "l"
+      ]
+    },
+    {
+      "name": "l_top1pct",
+      "type": "TopPercentileFlagTransformer",
+      "cols": [
+        "l"
+      ],
+      "params": {
+        "quantile": 0.99
+      }
+    },
+    {
+      "name": "l_bin",
+      "type": "QuantileBinsDropnaTransformer",
+      "cols": [
+        "l"
+      ],
+      "params": {
+        "num_bins": 5
+      }
+    },
+    {
+      "name": "m_missing",
+      "type": "MissingFlagTransformer",
+      "cols": [
+        "m"
+      ]
+    },
+    {
+      "name": "m_is_zero",
+      "type": "ZeroFlagTransformer",
+      "cols": [
+        "m"
+      ]
+    },
+    {
+      "name": "m_log",
+      "type": "LogFeatureTransformer",
+      "cols": [
+        "m"
+      ]
+    },
+    {
+      "name": "m_top1pct",
+      "type": "TopPercentileFlagTransformer",
+      "cols": [
+        "m"
+      ],
+      "params": {
+        "quantile": 0.99
+      }
+    },
+    {
+      "name": "m_bin",
+      "type": "QuantileBinsDropnaTransformer",
+      "cols": [
+        "m"
+      ],
+      "params": {
+        "num_bins": 5
+      }
+    },
+    {
+      "name": "o_freq_enc",
+      "type": "FrequencyEncodingTransformer",
+      "cols": [
+        "o"
+      ]
+    },
+    {
+      "name": "o_target_enc",
+      "type": "TargetEncodingCVTransformer",
+      "cols": [
+        "o"
+      ]
+    },
+    {
+      "name": "fecha_hour",
+      "type": "HourTransformer",
+      "cols": [
+        "fecha"
+      ]
+    },
+    {
+      "name": "fecha_weekday",
+      "type": "WeekdayTransformer",
+      "cols": [
+        "fecha"
+      ]
+    },
+    {
+      "name": "fecha_is_weekend",
+      "type": "IsWeekendFlagTransformer",
+      "cols": [
+        "fecha"
+      ]
+    },
+    {
+      "name": "fecha_hour_sin",
+      "type": "HourCyclicSinCosTransformer",
+      "cols": [
+        "fecha"
+      ],
+      "params": {
+        "component": "sin"
+      }
+    },
+    {
+      "name": "fecha_hour_cos",
+      "type": "HourCyclicSinCosTransformer",
+      "cols": [
+        "fecha"
+      ],
+      "params": {
+        "component": "cos"
+      }
+    },
+    {
+      "name": "monto_log",
+      "type": "LogFeatureTransformer",
+      "cols": [
+        "monto"
+      ]
+    },
+    {
+      "name": "monto_top1pct",
+      "type": "TopPercentileFlagTransformer",
+      "cols": [
+        "monto"
+      ],
+      "params": {
+        "quantile": 0.99
+      }
+    },
+    {
+      "name": "monto_bin",
+      "type": "QuantileBinsDropnaTransformer",
+      "cols": [
+        "monto"
+      ],
+      "params": {
+        "num_bins": 5
+      }
+    },
+    {
+      "name": "score_is_zero",
+      "type": "ZeroFlagTransformer",
+      "cols": [
+        "score"
+      ]
+    },
+    {
+      "name": "score_log",
+      "type": "LogFeatureTransformer",
+      "cols": [
+        "score"
+      ]
+    },
+    {
+      "name": "score_top1pct",
+      "type": "TopPercentileFlagTransformer",
+      "cols": [
+        "score"
+      ],
+      "params": {
+        "quantile": 0.99
+      }
+    },
+    {
+      "name": "score_bin",
+      "type": "QuantileBinsDropnaTransformer",
+      "cols": [
+        "score"
+      ],
+      "params": {
+        "num_bins": 5
+      }
+    },
+    {
+      "name": "pca_dm",
+      "type": "PCATransformer",
+      "cols": [
+        "d",
+        "m"
+      ],
+      "params": {
+        "num_components": 1,
+        "prefix": "pca_dm"
+      }
+    },
+    {
+      "name": "ratio_monto_l",
+      "type": "RatioTransformer",
+      "cols": [
+        "monto",
+        "l"
+      ]
+    },
+    {
+      "name": "monto_sum_10d",
+      "type": "SumWindowTransformer",
+      "cols": ["monto", "j", "fecha"],
+      "params": {"value_column": "monto", "window": "10d"}
+    },
+    {
+      "name": "monto_mean_10d",
+      "type": "MeanWindowTransformer",
+      "cols": ["monto", "j", "fecha"],
+      "params": {"value_column": "monto", "window": "10d"}
+    },
+    {
+      "name": "monto_median_10d",
+      "type": "MedianWindowTransformer",
+      "cols": ["monto", "j", "fecha"],
+      "params": {"value_column": "monto", "window": "10d"}
+    },
+    {
+      "name": "monto_max_10d",
+      "type": "MaxWindowTransformer",
+      "cols": ["monto", "j", "fecha"],
+      "params": {"value_column": "monto", "window": "10d"}
+    },
+    {
+      "name": "monto_min_10d",
+      "type": "MinWindowTransformer",
+      "cols": ["monto", "j", "fecha"],
+      "params": {"value_column": "monto", "window": "10d"}
+    },
+    {
+      "name": "monto_sum_15d",
+      "type": "SumWindowTransformer",
+      "cols": ["monto", "j", "fecha"],
+      "params": {"value_column": "monto", "window": "15d"}
+    },
+    {
+      "name": "monto_mean_15d",
+      "type": "MeanWindowTransformer",
+      "cols": ["monto", "j", "fecha"],
+      "params": {"value_column": "monto", "window": "15d"}
+    },
+    {
+      "name": "monto_median_15d",
+      "type": "MedianWindowTransformer",
+      "cols": ["monto", "j", "fecha"],
+      "params": {"value_column": "monto", "window": "15d"}
+    },
+    {
+      "name": "monto_max_15d",
+      "type": "MaxWindowTransformer",
+      "cols": ["monto", "j", "fecha"],
+      "params": {"value_column": "monto", "window": "15d"}
+    },
+    {
+      "name": "monto_min_15d",
+      "type": "MinWindowTransformer",
+      "cols": ["monto", "j", "fecha"],
+      "params": {"value_column": "monto", "window": "15d"}
+    }
+  ]
+}
