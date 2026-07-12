@@ -1,0 +1,8 @@
+{
+  "model_name": "CatBoost",
+  "classifier_type": "CatBoostClassifier",
+  "artifacts": {
+    "pipeline": "/Users/dpiedrahita/proyectos/DS_pro/03_model_selection/artifacts/CatBoost/pipeline.joblib",
+    "native": "/Users/dpiedrahita/proyectos/DS_pro/03_model_selection/artifacts/CatBoost/model.cbm"
+  }
+}
