@@ -1,0 +1,18 @@
+pandas==3.0.3
+numpy==2.5.0
+matplotlib==3.11.0
+seaborn==0.13.2
+tabulate==0.10.0
+ipykernel
+scipy==1.18.0
+statsmodels==0.14.6
+pyyaml==6.0.3
+scikit-learn==1.9.0
+# lightgbm y xgboost requieren libomp instalado a nivel de sistema en macOS:
+# brew install libomp (catboost no lo necesita, trae su propio runtime).
+lightgbm==4.6.0
+catboost==1.2.10
+xgboost==3.3.0
+plotly==6.9.0
+joblib==1.5.3
+jinja2==3.1.6
