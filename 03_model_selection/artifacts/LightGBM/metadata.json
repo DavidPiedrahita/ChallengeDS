@@ -1,0 +1,8 @@
+{
+  "model_name": "LightGBM",
+  "classifier_type": "LGBMClassifier",
+  "artifacts": {
+    "pipeline": "/Users/dpiedrahita/proyectos/DS_pro/03_model_selection/artifacts/LightGBM/pipeline.joblib",
+    "native": "/Users/dpiedrahita/proyectos/DS_pro/03_model_selection/artifacts/LightGBM/model.txt"
+  }
+}
