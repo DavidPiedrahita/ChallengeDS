@@ -1,0 +1,7 @@
+{
+  "model_name": "RandomForest",
+  "classifier_type": "RandomForestClassifier",
+  "artifacts": {
+    "pipeline": "/Users/dpiedrahita/proyectos/DS_pro/03_model_selection/artifacts/RandomForest/pipeline.joblib"
+  }
+}

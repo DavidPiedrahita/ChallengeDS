@@ -1,0 +1,8 @@
+{
+  "model_name": "XGBoost",
+  "classifier_type": "XGBClassifier",
+  "artifacts": {
+    "pipeline": "/Users/dpiedrahita/proyectos/DS_pro/03_model_selection/artifacts/XGBoost/pipeline.joblib",
+    "native": "/Users/dpiedrahita/proyectos/DS_pro/03_model_selection/artifacts/XGBoost/model.json"
+  }
+}
